@@ -8,5 +8,11 @@
 
 import Foundation
 
-println("Hello, World!")
+// This causes the swift compiler to crash with:
+// Segmentation fault: 11
 
+class MyClass {
+  func MyClass() -> MyClass {
+    return MyClass()
+  }
+}
