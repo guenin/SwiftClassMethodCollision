@@ -1,6 +1,8 @@
 SwiftClassMethodCollision
 =========================
 
+**Update:** As of Swift 1.2, this code produces a compilation error instead of a segfault.
+
 This project illustrates a bug in swift 1.1 that causes a segmentation fault.
 
 Creating a class with a method of the same name of the class, that returns an instance of the class, causes a segmentation fault when compiling.
